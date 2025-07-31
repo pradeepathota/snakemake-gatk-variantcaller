@@ -5,14 +5,15 @@
 #SBATCH --time=01:00:00
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=1G
-#SBATCH -A r00239
+#SBATCH -A <your_account_id>
 #SBATCH -p general
 
-source /N/u/vathota/Quartz/miniconda3/etc/profile.d/conda.sh
-conda activate bio-env
+# Load conda
+source <path_to_conda>/etc/profile.d/conda.sh
+conda activate <your_env_name>
 
-# Navigate to your project directory
-cd /N/u/vathota/Quartz/GATK
+# Navigate to the workflow directory
+cd <path_to_your_project_directory>
 
 # Perform Snakemake dry run
 snakemake -n -p --use-conda --configfile config.yaml
