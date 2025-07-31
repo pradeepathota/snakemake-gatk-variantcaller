@@ -26,7 +26,7 @@ GATK/
 ├── config.yaml              # Configuration file with sample IDs and paths
 ├── envs/                    # Conda environment YAMLs for each tool
 ├── data/                    # Input FASTQ files
-├── reference/               # Reference genome files (e.g., .fa, .dict, .fai)
+├── reference/               # Reference genome files (e.g., .fa, .dict, .fai) not included here
 ├── results/                 # Output directory with trimmed, aligned, and variant files
 ├── logs/                    # Logs from each Snakemake rule
 ├── snakemake_run.sh         # Submission script to run Snakemake on HPC
