@@ -1,0 +1,45 @@
+# Snakemake
+.snakemake/
+*.snakemake*
+
+# Conda environments
+*.conda
+*.yaml~
+*.yml~
+.conda/
+
+# SLURM & job logs
+*.out
+*.err
+logs/
+
+reference/
+
+# Intermediate and output files
+results/
+*.bam
+*.bai
+*.vcf
+*.html
+*.zip
+*.txt
+*.csv
+
+# Raw and trimmed sequencing data
+*.fastq
+*.fastq.gz
+data/*.fastq.gz
+
+# Python cache
+__pycache__/
+*.pyc
+
+# macOS & system files
+.DS_Store
+
+# VSCode and IDEs
+.vscode/
+.idea/
+
+# Misc
+*.log
