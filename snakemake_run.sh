@@ -5,17 +5,15 @@
 #SBATCH --time=24:00:00
 #SBATCH --cpus-per-task=4
 #SBATCH --mem=24G
-#SBATCH -A r00239
 #SBATCH -p general
-#SBATCH --mail-user=vathota@iu.edu
-#SBATCH --mail-type=ALL 
+#SBATCH -A <account id>
 
-# Load Conda and activate your base or Snakemake-specific environment
-source /N/u/vathota/Quartz/miniconda3/etc/profile.d/conda.sh
-conda activate bio-env
+# Load conda
+source <path_to_conda>/etc/profile.d/conda.sh
+conda activate <your_env_name>
 
-# Navigate to your project directory (update path if needed)
-cd /N/u/vathota/Quartz/GATK
+# Navigate to the workflow directory
+cd <path_to_your_project_directory>
 
 # Run Snakemake with real execution
 snakemake --use-conda --conda-frontend conda --cores 4 --configfile config.yaml --latency-wait 60 --rerun-incomplete
