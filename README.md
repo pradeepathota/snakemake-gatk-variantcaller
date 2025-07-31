@@ -60,7 +60,7 @@ sbatch snakemake_run.sh
 ```
 ## Results
 
-The pipeline produces the following variou output files for each step but i kept the key output from this pipeline located in the `results/` directory:
+The pipeline produces the output files for each step but i have kept the key output from this pipeline located in the `results/` directory:
 
 - `*.vcf`: Variant call format files containing identified SNPs and INDELs
 - `multiqc_report.html`: Consolidated QC report across all samples
