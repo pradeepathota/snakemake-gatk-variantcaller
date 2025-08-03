@@ -1,0 +1,12 @@
+reference/
+logs/
+results/
+*.bam
+*.bai
+*.fastq*
+*.vcf
+*.zip
+*.html
+.snake*
+.conda/
+__pycache__/

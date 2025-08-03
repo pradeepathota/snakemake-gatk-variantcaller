@@ -1,0 +1,7 @@
+samples:
+  SRR622461:
+    R1: data/SRR622461_1.fastq.gz
+    R2: data/SRR622461_2.fastq.gz
+
+ref: reference/genome.fa
+output_dir: "/N/scratch/vathota/gatk/results"
