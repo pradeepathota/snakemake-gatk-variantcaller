@@ -5,7 +5,7 @@
 #SBATCH --time=01:00:00
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=1G
-#SBATCH -A r00239
+#SBATCH -A <project id>
 #SBATCH -p general
 
 source /N/u/vathota/Quartz/miniconda3/etc/profile.d/conda.sh
