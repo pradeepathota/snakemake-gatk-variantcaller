@@ -18,4 +18,4 @@ conda activate bio-env
 cd /N/u/vathota/Quartz/gatk
 
 # Run Snakemake with real execution
-snakemake --use-conda --conda-frontend conda --cores 8 --configfile config.yaml --latency-wait 60 --rerun-incomplete /N/scratch/vathota/gatk/results/SRR622461/variants.filtered.vcf
+snakemake --use-conda --conda-frontend conda --cores 8 --configfile config.yaml --latency-wait 60 --rerun-incomplete 
