@@ -5,9 +5,9 @@
 #SBATCH --time=24:00:00
 #SBATCH --cpus-per-task=1
 #SBATCH --mem=24G
-#SBATCH -A r00239
+#SBATCH -A <project id >
 #SBATCH -p general
-#SBATCH --mail-user=vathota@iu.edu
+#SBATCH --mail-user=mail
 #SBATCH --mail-type=ALL 
 
 # Load Conda and activate your base or Snakemake-specific environment
