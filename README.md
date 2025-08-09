@@ -36,10 +36,13 @@ This repository provides a Snakemake-based variant calling pipeline using GATK, 
 - `Snakefile` — Main workflow file
 - `config.yaml` — Sample and reference paths
 - `envs/` — Conda environment YAMLs for reproducibility
-- `data/` — (Optional) Test/sample data folder (do not include large files!)
+- `data/` — Test/sample data folder
 - `dryrun.sh` — Script for pipeline dry-run
-- `snakemake_run.sh` — Script to run pipeline (edit for cluster if needed)
+- `snakemake_run.sh` — Script to run pipeline
 
+## Results
+1. filtered.vcf.gz: Final high-quality variant calls (SNPs and Indels)
+2. filtered.vcf.gz.tbi: VCF index
 ## Citation
 
 If you use this pipeline, please cite GATK, Snakemake, and all component tools.
